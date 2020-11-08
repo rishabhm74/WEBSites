@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+body{
+    height: auto;
+    background-color: #1A1A1A;
+    
+}
+
+/* mainOuterContainer starts */
+
+.mainOuterContainer{
+    height: 100%;
+    width: 100%;
+    background-color: #1A1A1A;
+}
+
+
+/* mainContainer starts */
+
+.mainContainer{
+    background-color: ;
+    height: 250rem;
+    width: 84.5rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+}
+
+.mainContainer div{
+    height: 100%;
+    background-color: ;
+    border-left: 1px solid #eeeeee08;
+}
+
+.mainContainer div:first-child{
+    border-left: 1px solid #eeeeee00;
+}
+
+.mainContainer div:last-child{
+    border-right: 1px solid #eeeeee00;
+}
+
+
+/* mainContainer ends */
+
+/* mainOuterContainer ends */
+
+/* mainOverlayContainer starts */
+
+.mainOverlayContainer{
+    width: 84.5rem;
+    height: 250rem;
+    background-color: ;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: -250rem;
+}
+
+/* navbar starts */
+
+.navbar{
+    width: 100%;
+    height: 8rem;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 0.3s;
+    
+}
+
+.navbar li{
+    height: auto;
+    width: 10.5rem;
+    background-color: ;
+    list-style: none;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 400;
+    /* padding-left: 0.5rem;
+    text-align: left; */
+}
+
+.navbar li a{
+    color: #e0e0e0b4;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar li a:hover{
+    color: #ffffff;
+}
+
+/* .navbar li:first-child{
+    padding-left: 0.5rem;
+} */
+
+.navbar li:nth-child(5){
+    padding-left: 0.1rem;
+}
+
+.navbar li:last-child{
+    padding-left: 0.15rem;
+}
+
+.logoContainer{
+    height: 3rem;
+    width: 3rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    box-shadow: 0px 5px 5px #00000020;
+}
+
+.navbarOnScroll{
+    background-color: #ffffff;
+    color: #1A1A1A;
+    /* position: fixed;
+    top: 0; */
+    height: 5rem;
+    transition: 0.3s;
+    transition: height 0.3s;
+    box-shadow: 0px 10px 10px #00000012;
+}
+
+.navbarOnScroll li a{
+    color: #727272;
+}
+
+.navbarOnScroll li a:hover{
+    color: #000000;
+}
+
+/* navbar ends */
+
+.featuredContainer{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7rem;
+    color: #ffffff;
+    margin-top: 5rem;
+    margin-left: 10.5rem;
+    border-left: 0.15rem solid #ffffff8e;
+    padding: 0.2rem 0;
+    padding-top: 0.4rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+
+}
+
+.overlayMoved{
+    margin-top:  14rem;
+}
+
+.roleContainer{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 10.5rem;
+    margin-top: 1.5rem;
+    line-height: 1.25;
+}
+
+/* cubeContainer starts */
+
+.cubeContainer{
+    height: auto;
+    width: 100%;
+    margin-top: -6rem;
+}
+
+.meetCubeContainer{
+    margin-left: 63.5rem;
+    background-color: #ffb414;
+    height: 10.5rem;
+    width: 10.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+.meetCubeContainer img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.trial{
+    height: auto;
+}
+
+.trial img{
+    height: 21rem;
+    width: 21rem;
+    margin-left: 10.7rem;
+}
+
+/* cubeContainer ends */
+
+/* mainOverlayContainer ends */
