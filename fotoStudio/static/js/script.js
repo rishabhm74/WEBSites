@@ -1,18 +1,31 @@
 $(function() {
     $(window).scroll(function() {
-        // var windowScrolledDist = $(document).scrollTop();
-        // var navHeight = $('.navbar').height();
-        // var logoHeight = $('.logoContainer').height();
-        // var logoOffsetTop = $('.logoContainer').offset();
-        // console.log(logoHeight, logoOffsetTop.top);
-        // if(windowScrolledDist > (logoHeight + 40)) {
-        //     $('.navbar').addClass('navbarOnScroll');
-        //     $('.featuredContainer').addClass('overlayMoved');
-        // }
-        // if(windowScrolledDist <= (logoHeight + 40)) {
-        //     $('.navbar').removeClass('navbarOnScroll');
-        //     $('.featuredContainer').removeClass('overlayMoved');
-        // }
+        var windowScrolledDist = $(document).scrollTop();
+        
+        var navbarHeight = $('.navbar').height();
+        var featuredContainer = $('.featuredContainer').height();
+        var roleContainer = $('.roleContainer').height();
+        var cubeContainer = $('.cubeContainer').height();
+        var spacing = $('.spacing').height();
+        var projectsContainer = $('.projectsContainer').height();
+        var totalHeightForProjects = navbarHeight + featuredContainer + roleContainer + cubeContainer - 380;
+        var totalHeightForTalks = totalHeightForProjects + projectsContainer + 50;
+
+
+        if(windowScrolledDist >= totalHeightForProjects) {
+            $('.projectsContainer').addClass('projectsContainerVisible');
+        } else {
+            $('.projectsContainer').removeClass('projectsContainerVisible');
+        }
+
+        if(windowScrolledDist >= totalHeightForTalks) {
+            $('.workWithUsTitle').addClass('workWithUsTitleVisible');
+        } else {
+            $('.workWithUsTitle').removeClass('workWithUsTitleVisible');
+        }
+
+
+        
     })
 })
 
