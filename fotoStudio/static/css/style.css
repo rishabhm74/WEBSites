@@ -405,7 +405,14 @@ html, body{
     height: 100%;
     background-color: #242424;
     margin-left: 0rem;
+    background: url('/static/assets/images/wave.png');
+    background-size: contain;
 }
+
+/* .testimonialAudioContainer img{
+    width: 100%;
+    filter: grayscale(0);
+} */
 
 .testimonialAudioTitleContainer{
     width: 100%;
